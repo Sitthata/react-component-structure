@@ -1,16 +1,10 @@
 import { useState } from "react";
 
 const Form = () => {
-  const [data, setData] = useState("");
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    setData(e.target.value);
-  };
+  // const [data, setData] = useState("");
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {};
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    setData("");
-  };
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {};
 
   return (
     <div className="p-5 bg-slate-300">
@@ -20,19 +14,13 @@ const Form = () => {
           className="p-1 rounded-md"
           type="text"
           placeholder="input here..."
-          onChange={handleInput}
-          value={data}
         />
-        <button
-      className="button"
-          type="submit"
-          onClick={handleClick}
-        >
+        <button className="button" type="submit">
           Reset
         </button>
       </form>
       <h2 className="mt-6 text-lg">
-        Here is what you just typed: {data ? data : "empty"}
+        {/* Here is what you just typed: {data ? data : "empty"} */}
       </h2>
     </div>
   );

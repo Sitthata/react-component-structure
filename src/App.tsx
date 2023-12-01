@@ -13,13 +13,10 @@ function App() {
         <Welcome name="Sally" />
       </WelcomeLayout>
 
-      <PackingList />
-
-      <Form />
-
-      <BMICalculator />
-
-      <Rainbox />
+      {/* <PackingList /> */}
+      {/* <Rainbox /> */}
+      {/* <Form /> */}
+      {/* <BMICalculator /> */}
     </>
   );
 }
